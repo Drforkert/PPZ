@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e6e6e6;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
+.navbar{
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+    background-color: #000!important;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,0.4);
+    z-index: 15;
+}
+.nav-link{
+    color: white!important;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: green!important;
+}
+.nav-item:active{
+    color: green!important;
+}
+.spanwhite{
+    color: white;
+}
+.spanred{
+    color: red;
+}
+.navbar-light .navbar-toggler{
+    border-color: transparent!important;
+    color: white!important;
+}
+button:focus{
+    outline: none!important;
+}
+.display-4{
+    font-size: 3rem;
+    font-family: 'Niconne', cursive;
+    color: Green;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: Green!important;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+/* CAROUSEL*/
+#carousel{
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.4);
+    background-color: #e6e6e6;
+}
+.carousel-inner{
+    max-height: 93vh!important;
+    object-fit: cover;
+}
+.carousel-control-next, .carousel-control-prev{
+    top: 50%!important;
+    bottom: 50%!important;
+    opacity: 1!important;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active{
+    transition: transform 1.2s ease;
+    object-fit: cover;
+}
+.carousel-item img{
+    object-fit: cover;
+}
+.fa-chevron-left, .fa-chevron-right{
+    color: #000!important;
+    font-weight: bold!important;
+    font-size: 2.8rem;
+    height: 16px;
+} 
+/* CAROUSEL END*/
+/* ABOUT START */
+/* #about {
+    height: 100vh;
+    width: 100%;
+} */
+#about {
+    background-color: #e6e6e6;
+}
+#about img{
+    border-radius: 8px;
+}
+#info{
+    background-color: #000;
+}
+.mb-4 {
+    color: white!important;
+}
+.shop-info i {
+    font-size: 50px;
+}
+.shop-info h1{
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+#info .fas, .fa{
+    color: green!important;
+}
+.shop-info p,
+.shop-info address{
+    color: white!important;
+}
+.scrollable{
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+@media screen and (max-width: 320px) {
+    .navbar-brand{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 770px) {
+    .navbar-brand{
+        font-size: 1.2rem;
+    }
+    .shop-info i{
+        font-size: 35px;
+    }
+    .shop-info h1{
+        font-size: 20px;
+    }
+    .shop-info p{
+        font-size: 1rem;
+    }
+    .carousel-inner{
+        max-height: 100%!important;
+        object-fit: cover;
+        margin-top: -55px;
+    }
+    .img-fluid {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    #about .img-fluid img{
+        height: 400px!important;
+        width: 400px!important;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .img-fluid{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+    #about .img-fluid{
+        height: 400px!important;
+        width: 400px!important;
+        object-fit: cover;
+    }
+}
