@@ -6,6 +6,12 @@
 html{
     scroll-behavior: smooth;
 }
+:target:before{
+    content:"";
+    display: block;
+    height: 250px;
+    margin: -250px 0 0;
+}
 body{
     background-color: #e6e6e6;
 }
@@ -116,7 +122,7 @@ button:focus{
     text-transform: uppercase;
 }
 #info .fas, .fa{
-    color: green!important;
+    color: white!important;
 }
 .shop-info p,
 .shop-info address{
@@ -127,11 +133,74 @@ button:focus{
     overflow: scroll;
     overflow-x: hidden;
 }
+.wrapper{
+    padding: 10px;
+}
+.tableImg {
+    width: 200px;
+    height: 200px!important;
+    border-radius: 10px;
+}
+.table ::-webkit-scrollbar ::-webkit-scrollbar-thumb {
+    width: 0px;
+    background: #ff0000;
+    border-radius: 10px;
+    border: none;
+}
 
+/** TEAMSECTION **/
+#team {
+    height: 900px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.swiper-container {
+    width: 300px;
+    height: 600px;
+    border-radius: 10px!important;
+}
+.swiper-wrapper {
+    border-radius: 10px!important;
+}
+.swiper-slide img {
+    object-fit: cover;
+    cursor: pointer;
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+}
+.swiper-caption{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    top: 55%;
+}
 
 @media screen and (max-width: 320px) {
     .navbar-brand{
         font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .swiper-container {
+        width: 320px!important;
+        height: 400px!important;
+        border-radius: 10px!important;
+    }
+    .swiper-slide img {
+        object-fit: cover;
+        height: 400px!important;
+        width: 320px!important;
+        border-radius: 10px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 60%;
     }
 }
 @media screen and (max-width: 770px) {
@@ -173,5 +242,35 @@ button:focus{
         height: 400px!important;
         width: 400px!important;
         object-fit: cover;
+    }
+    .swiper-container {
+        width: 600px;
+        height: 500px;
+        border-radius: 10px!important;
+    }
+    .swiper-slide img {
+        object-fit: cover;
+        height: 500px;
+        width: 600px;
+        border-radius: 10px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .tableImg {
+        height: 300px!important;
+        width: 550px;
+        object-fit: cover;
+    }
+    .swiper-container {
+        width: 600px;
+        height: 600px;
+        border-radius: 10px!important;
+    }
+    .swiper-slide img {
+        object-fit: cover;
+        cursor: pointer;
+        height: 600px;
+        width: 600px;
+        border-radius: 10px;
     }
 }
