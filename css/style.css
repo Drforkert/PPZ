@@ -5,6 +5,14 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: #FF0000;
 }
 :target:before{
     content:"";
@@ -141,6 +149,10 @@ button:focus{
     height: 200px!important;
     border-radius: 10px;
 }
+.tableText {
+    font-family: 'Niconne' , cursive;
+    font-size: 3rem;
+}
 .table ::-webkit-scrollbar ::-webkit-scrollbar-thumb {
     width: 0px;
     background: #ff0000;
@@ -150,9 +162,7 @@ button:focus{
 
 /** TEAMSECTION **/
 #team {
-    height: 900px;
     margin-top: 20px;
-    margin-bottom: 50px;
 }
 .swiper-container {
     width: 300px;
@@ -179,6 +189,70 @@ button:focus{
 .swiper-button-prev,
 .swiper-button-next {
     top: 55%;
+}
+/*GALLERY*/
+#gallery{
+    height: 100vh;
+    margin: 50px;
+}
+.gallery-title {
+     font-size: 36px;
+     color: #FFA500;
+     text-align: center;
+     font-weight: 500;
+     margin-bottom: 70px
+}
+
+.gallery-title:after {
+     content: "";
+     position: absolute;
+     width: 22.5%;
+     left: 38.5%;
+     height: 45px;
+     border-bottom: 1px solid #5e5e5e
+}
+
+.filter-button {
+     font-size: 18px;
+     border: 1px solid green;
+     border-radius: 5px;
+     text-align: center;
+     color: red;
+     margin-bottom: 30px
+}
+
+.filter-button:hover {
+     font-size: 18px;
+     border: 1px solid green;
+     border-radius: 5px;
+     text-align: center;
+     color: #ffffff;
+     background-color: green
+}
+
+.btn-default:active .filter-button:active {
+     background-color: #FFA500;
+     color: white
+}
+
+.port-image {
+     width: 100%
+}
+
+.gallery_product {
+     margin-bottom: 30px
+}
+
+#gallery img {
+     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+     border-radius: 5px;
+     width: 300px;
+     height: 270px;
+     object-fit: cover;
+}
+.hide{
+    opacity: 0;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 320px) {
@@ -257,20 +331,23 @@ button:focus{
 }
 @media screen and (min-width: 1200px) {
     .tableImg {
-        height: 300px!important;
-        width: 550px;
+        height: 400px!important;
+        width: 960px;
         object-fit: cover;
     }
     .swiper-container {
-        width: 600px;
-        height: 600px;
+        height: 700px;
+        width: 800px;
         border-radius: 10px!important;
     }
     .swiper-slide img {
         object-fit: cover;
         cursor: pointer;
-        height: 600px;
-        width: 600px;
+        height: 700px;
+        width: 800px;
         border-radius: 10px;
+    }
+    #menu .container {
+        max-width: 100%;
     }
 }
