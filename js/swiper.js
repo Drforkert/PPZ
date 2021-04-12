@@ -1,9 +1,11 @@
 const swiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
-    loop: true,
-    autoplay: {
-      delay: 5000
-    },
+    loop: false,
+    slidesPerView: 1,
+    autoplay: true,
+    delay: 6500,
+    disableOnInteraction: false,
+    centeredSlides: true,
   
     pagination: {
       el: '.swiper-pagination',
@@ -17,4 +19,4 @@ const swiper = new Swiper('.swiper-container', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-  });
+});

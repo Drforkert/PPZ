@@ -83,6 +83,15 @@ button:focus{
     max-height: 93vh!important;
     object-fit: cover;
 }
+.carousel::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+}
 .carousel-control-next, .carousel-control-prev{
     top: 50%!important;
     bottom: 50%!important;
@@ -98,11 +107,60 @@ button:focus{
     object-fit: cover;
 }
 .fa-chevron-left, .fa-chevron-right{
-    color: #000!important;
+    color: #fff!important;
     font-weight: bold!important;
     font-size: 2.8rem;
     height: 16px;
 } 
+#home .swiper-container {
+    width: 500px!important;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+}
+#home .swiper-wrapper {
+    width: 500px!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* #home .swiper-slide h1{
+    width: 166px!important;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Niconne', cursive;
+    text-align: center;
+} */
+#home .sw-header{
+    width: 500px!important;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Niconne', cursive;
+    text-align: center;
+}
+#home .swiper-slide{
+    width: 500px!important;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#home .swiper-button-next,
+#home .swiper-button-prev {
+    display: none;
+}
 /* CAROUSEL END*/
 /* ABOUT START */
 /* #about {
@@ -162,6 +220,9 @@ button:focus{
 }
 .wrapper{
     padding: 10px;
+}
+table {
+    border: collapse;
 }
 .tableImg {
     width: 200px;
@@ -353,7 +414,18 @@ button:focus{
     }
     #about .swiper-slide img {
         width: 512px;
-        height: auto;
+        height: 400px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #home .sw-header {
+        width: 200px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+        font-family: 'Niconne', cursive;
+        text-align: center;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -387,5 +459,11 @@ button:focus{
     }
     #menu .container {
         max-width: 100%;
+    }
+    #home .sw-header {
+        color: white;
+        font-size: 5rem;
+        font-family: 'Niconne', cursive;
+        text-align: center;
     }
 }
