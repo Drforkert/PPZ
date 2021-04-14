@@ -111,51 +111,35 @@ button:focus{
     font-weight: bold!important;
     font-size: 2.8rem;
     height: 16px;
-} 
-#home .swiper-container {
-    width: 500px!important;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    top: 50%;
-    left: 50%;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-}
-#home .swiper-wrapper {
-    width: 500px!important;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-/* #home .swiper-slide h1{
-    width: 166px!important;
-    color: white;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-family: 'Niconne', cursive;
-    text-align: center;
-} */
-#home .sw-header{
-    width: 500px!important;
-    color: white;
-    font-size: 3rem;
-    font-family: 'Niconne', cursive;
-    text-align: center;
 }
 #home .swiper-slide{
-    width: 500px!important;
+    background: transparent; 
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+#home .swiper-container {
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 3rem; */
+    max-width: 600px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home .sw-header{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Niconne', cursive;
 }
 #home .swiper-button-next,
 #home .swiper-button-prev {
@@ -462,7 +446,7 @@ table {
     }
     #home .sw-header {
         color: white;
-        font-size: 5rem;
+        font-size: 4.1rem;
         font-family: 'Niconne', cursive;
         text-align: center;
     }

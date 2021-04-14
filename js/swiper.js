@@ -5,10 +5,11 @@ const swiper = new Swiper('.swiper-container', {
     autoplay: true,
     delay: 6500,
     disableOnInteraction: false,
-    centeredSlides: true,
+    // centeredSlides: true,
   
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   
     navigation: {
