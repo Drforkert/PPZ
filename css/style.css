@@ -179,10 +179,10 @@ button:focus{
     border-radius: 8px;
 } */
 #info{
-    background-color: #000;
+    background-color: #e6e6e6;
 }
 .mb-4 {
-    color: white!important;
+    color: #000!important;
 }
 .shop-info i {
     font-size: 50px;
@@ -193,12 +193,102 @@ button:focus{
     text-transform: uppercase;
 }
 #info .fas, .fa{
-    color: white!important;
+    color: green!important;
 }
 .shop-info p,
 .shop-info address{
-    color: white!important;
+    color: #000!important;
 }
+#offers {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    overflow: hidden;
+}
+#offers .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#offers .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+}
+
+#offers .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+/*offers */
+/* OFFERS TRIAL 1 */
+/* #offers {
+    height: 100vh;
+}
+#offers .swiper-container-one {
+    width: 800px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    border-radius: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    overflow: hidden;
+}
+#offers .swier-slide.one {
+    background-position: center;
+    background-size: cover;
+    background: #f2f2f2;
+} */
+/* OFFERS TRIAL 1 END */
+/* .offer-container {
+    font-family: 'Poppins';
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.75);
+    transition: all ease 0.5s;
+}
+.offer-container .swiper-wrapper {
+    margin-bottom: 40px;
+}
+.offer-container .swiper-slide {
+    z-index: 5;
+}
+.offer-container .name .sub-title,
+.offer-container .name .title,
+.offer-container .overview .title{
+    text-transform: uppercase;
+}
+.offer-container .name .title,
+.offer-container .overview .description,
+.offer-container .overview .title {
+    color: white;
+}
+.offer-container .name {
+    margin-bottom: 3rem;
+}
+.offer-container .sub-title{
+    color: green;
+    font-weight: 600;
+    margin-bottom: -0.5rem;
+}
+.offer-container.montag {
+    background-color: #c71b22;
+}
+.offer-container.donnerstag{
+    background-color: #720000; 
+} */
+/*offers end*/
 .scrollable{
     height: 300px;
     overflow: scroll;
@@ -209,6 +299,13 @@ button:focus{
 }
 table {
     border: collapse;
+}
+.table td, .table th {
+    border: none!important;
+}
+.blankRow {
+    text-align: center;
+    border-bottom: 1px solid green;
 }
 .tableImg {
     width: 200px;
@@ -226,6 +323,7 @@ table {
     border-radius: 10px;
     border: none;
 }
+
 
 /** TEAMSECTION **/
 #team {
@@ -326,6 +424,22 @@ table {
     .navbar-brand{
         font-size: 1.3rem;
     }
+    #about {
+        padding-right: 0!important;
+    }
+    #about .img-fluid img{
+        height: 290px!important;
+        width: 290px!important;
+        object-fit: cover;
+    }
+    #about .swiper-container {
+        width: 290px;
+        height: auto;
+    }
+    #about .swiper-slide img {
+        width: 290px;
+        height: 350px;
+    }
 }
 @media screen and (max-width: 500px) {
     .swiper-container {
@@ -342,6 +456,9 @@ table {
     .swiper-button-prev,
     .swiper-button-next {
         top: 60%;
+    }
+    #about {
+        padding-right: 0!important;
     }
 }
 @media screen and (max-width: 770px) {
@@ -367,10 +484,21 @@ table {
         height: 100vh;
         object-fit: cover;
     }
+    #about {
+        padding-right: 20px;
+    }
     #about .img-fluid img{
-        height: 400px!important;
-        width: 400px!important;
+        height: 370px!important;
+        width: 370px!important;
         object-fit: cover;
+    }
+    #about .swiper-container {
+        width: 350px;
+        height: auto;
+    }
+    #about .swiper-slide img {
+        width: 350px;
+        height: 400px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -396,11 +524,11 @@ table {
         border-radius: 10px;
     }
     #about .swiper-container {
-        width: 512px;
+        width: 370px;
         height: auto;
     }
     #about .swiper-slide img {
-        width: 512px;
+        width: 370px;
         height: 400px;
     }
     #home .swiper-slide {
@@ -409,7 +537,7 @@ table {
 }
 @media screen and (min-width: 1024px) {
     #home .sw-header {
-        width: 200px;
+        width: 100%;
         color: white;
         align-items: center;
         justify-content: center;
@@ -451,6 +579,7 @@ table {
         max-width: 100%;
     }
     #home .sw-header {
+        width: 100%;
         color: white;
         font-size: 4rem;
         font-family: 'Niconne', cursive;
