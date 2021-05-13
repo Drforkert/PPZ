@@ -161,6 +161,14 @@ button:focus{
     height: 600px;
     border-radius: 10px!important;
 }
+.fat-paragraph {
+    font-size: 1rem;
+    color: red !important;
+}
+.fat-info{
+    color: green;
+    font-size: 1rem;
+}
 #about .swiper-wrapper {
     border-radius: 10px!important;
 }
