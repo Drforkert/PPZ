@@ -384,6 +384,9 @@ table {
     #about {
         padding-right: 0!important;
     }
+    .gallery .image-container .image {
+        margin: 0.3rem;
+    }
 }
 @media screen and (max-width: 770px) {
     .navbar-brand{
