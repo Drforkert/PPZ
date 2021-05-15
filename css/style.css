@@ -74,6 +74,9 @@ button:focus{
     font-family: 'Poppins';
     font-weight: bold;
 }
+.navbar-nav  {
+    align-items: center;
+}
 .navNumber {
     z-index: 10;
     color: white;
@@ -261,13 +264,18 @@ button:focus{
     overflow-x: hidden;
 }
 .wrapper{
-    padding: 10px;
+    padding-bottom: 5px;
 }
 table {
     border: collapse;
 }
 .table td, .table th {
     border: none!important;
+}
+.table th {
+    background-color: green;
+    position: sticky;
+    top: 0;
 }
 .blankRow {
     text-align: center;
@@ -277,7 +285,8 @@ table {
     width: 200px;
     object-fit: cover;
     height: 200px!important;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .tableText {
     font-family: 'Niconne' , cursive;
@@ -415,6 +424,9 @@ table {
     .table td,
     .table th {
         padding: 0;
+    }
+    .navNumber {
+        font-size: 0.6rem;
     }
 }
 @media screen and (max-width: 770px) {
