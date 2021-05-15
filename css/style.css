@@ -348,6 +348,10 @@ table {
     flex-wrap: wrap;
     padding-bottom: 2rem;
 }
+.gallery .image-container {
+    max-height: 120vh;
+    overflow: scroll;
+}
 .gallery .image-container .image {
     width: 30rem;
     margin: 2rem;
@@ -411,6 +415,10 @@ table {
     }
     .navNumber {
         font-size: 0.6rem;
+    }
+    .gallery .image-container {
+        max-height: 140vh;
+        overflow: scroll;
     }
 }
 @media screen and (max-width: 770px) {
