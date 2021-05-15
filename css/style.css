@@ -203,6 +203,11 @@ button:focus{
 #about .swiper-button-next {
     top: 50%;
 }
+.offersite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* #about img{
     border-radius: 8px;
 } */
@@ -227,42 +232,14 @@ button:focus{
 .shop-info address{
     color: #000!important;
 }
-#offers {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-#offers .swiper-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-#offers .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 500px;
-}
-
-#offers .swiper-slide img {
-    display: block;
-    width: 100%;
-}
-
-
-/* TRIAL OFFERSWIPER 1 */
-/* TRIAL OFFERSWIPER 1 END */
-/*offers end*/
+/** MENÜ START */
 .scrollable{
     height: 300px;
     overflow: scroll;
     overflow-x: hidden;
+    border-bottom: 3px solid red;
 }
+
 .wrapper{
     padding-bottom: 5px;
 }
@@ -326,9 +303,16 @@ table {
     justify-content: center;
     align-items: center;
 }
-.swiper-button-prev,
-.swiper-button-next {
-    top: 55%;
+.teamPagination,
+.teamPagination {
+    top: 70%;
+    color: red;
+}
+.team .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -120px;
+    width: 100%;
+    left: 0;
+    color:red;
 }
 /*GALLERY*/
 #gallery{
@@ -413,7 +397,7 @@ table {
     }
     .swiper-button-prev,
     .swiper-button-next {
-        top: 60%;
+        top: 75%;
     }
     #about {
         padding-right: 0!important;
